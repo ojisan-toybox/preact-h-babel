@@ -8,7 +8,7 @@ const TestComponent = () => {
     <div>
       <button
         onClick={() => {
-          setState(staet + 1);
+          setState(state + 1);
         }}
       >
         add
