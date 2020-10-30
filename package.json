@@ -1,0 +1,26 @@
+{
+  "name": "preact-h-babel",
+  "version": "1.0.0",
+  "description": "preact で jsx を babel でトランスパイルしてどのような h関数が吐かれるかを見る",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojisan-toybox/preact-h-babel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ojisan-toybox/preact-h-babel/issues"
+  },
+  "homepage": "https://github.com/ojisan-toybox/preact-h-babel#readme",
+  "dependencies": {
+    "preact": "^10.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-react-jsx": "^7.12.1"
+  }
+}
