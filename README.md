@@ -12,7 +12,7 @@ before...
 
 ```jsx
 import { h } from "preact";
-import { useState } from "preact";
+import { useState } from "preact/compat";
 
 const TestComponent = () => {
   const [state, setState] = useState(0);
@@ -39,7 +39,7 @@ after
 
 ```js
 import { h } from "preact";
-import { useState } from "preact";
+import { useState } from "preact/compat";
 
 const TestComponent = () => {
   const [state, setState] = useState(0);
