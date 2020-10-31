@@ -1,20 +1,23 @@
-import { h } from "preact";
-import { useState } from "preact";
+import { h, Fragment } from "preact";
+import { useState } from "preact/compat";
 
 const TestComponent = () => {
   const [state, setState] = useState(0);
   return h(
-    "div",
+    Fragment,
     null,
     h(
       "button",
       {
         onClick: () => {
-          setState(staet + 1);
+          setState(state + 1);
         },
       },
       "add"
     ),
-    h("div", null, h("span", null, "count: "), h("span", null, state))
+    h("div", null, h("span", null, "count: "), h("span", null, state)),
+    "3",
+    false,
+    "3"
   );
 };

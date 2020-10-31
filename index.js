@@ -1,11 +1,11 @@
-import { h } from "preact";
+import { h, Fragment } from "preact";
 import { useState } from "preact/compat";
 
 const TestComponent = () => {
   const [state, setState] = useState(0);
 
   return (
-    <div>
+    <>
       <button
         onClick={() => {
           setState(state + 1);
@@ -17,6 +17,8 @@ const TestComponent = () => {
         <span>count: </span>
         <span>{state}</span>
       </div>
-    </div>
+      3{false}
+      {"3"}
+    </>
   );
 };
